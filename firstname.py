@@ -32,6 +32,7 @@ def merge(left_list, right_list):
 
     return sorted_list
 
+
 def merge_sort(nums):
     # Возвращаем список, если он состоит из одного элемента
     if len(nums) <= 1:
@@ -48,10 +49,12 @@ def merge_sort(nums):
     # Объединяем отсортированные списки в результирующий
     return merge(left_list, right_list)
 
-# Проверяем, что оно работает
-random_list_of_nums = [120, 45, 68, 250, 176]
-random_list_of_nums = merge_sort(random_list_of_nums)
-print(random_list_of_nums)
-random_list_of_nums = [1, 12,85,45,39,5,4,7,12]
-random_list_of_nums = merge_sort(random_list_of_nums)
-print(random_list_of_nums)
+
+if __name__ == "__main__":
+    # Проверяем, что оно работает
+    random_list_of_nums = [120, 45, 68, 250, 176]
+    random_list_of_nums = merge_sort(random_list_of_nums)
+    print(random_list_of_nums)
+    random_list_of_nums = [1, 12,85,45,39,5,4,7,12]
+    random_list_of_nums = merge_sort(random_list_of_nums)
+    print(random_list_of_nums)
